@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/img"
+        android:id="@+id/ivProduct"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:padding="8dp"
+        android:weightSum="2">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="Laptop WRU"
+            android:id="@+id/tvName"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#2f6fe6"
+            android:textStyle="bold"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="Price"
+            android:id="@+id/tvTime"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnDeleted"
+        android:onClick="delProduct"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delblack"
+        android:layout_gravity="end" />
+
+</LinearLayout>
